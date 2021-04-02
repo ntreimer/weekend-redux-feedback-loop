@@ -6,6 +6,7 @@
 - [ ] db in postico
 - [ ] components
     - [ ] Header
+    - [ ] Home
     - [ ] Feelings
         - [ ] input dropdown 1-5
         - [ ] next
@@ -24,13 +25,13 @@
     - [ ] Thanks
         - [ ] button to leave new feedback
 - [ ] HashRouter
-    - [ ] /
-    - [ ] /feelings
-    - [ ] /understanding
-    - [ ] /support
-    - [ ] /comments
-    - [ ] /review
-    - [ ] /thanks
+    - [x] /
+    - [x] /feelings
+    - [x] /understanding
+    - [x] /support
+    - [x] /comments
+    - [x] /review
+    - [x] /thanks
 - [ ] Redux/Index
     - [ ] reducers
         - [ ] feelings

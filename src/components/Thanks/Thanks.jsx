@@ -1,10 +1,15 @@
 import React from 'react';
-
+import {useHistory} from 'react-router-dom';
 
 function Thanks() {
-    return (
+    const history = useHistory();
+    const goToHome = () => {
+        history.push('/');
+    }
+    return (<>
         <h2>Thank you for your feedback!</h2>
-    );
+        <button type="button" onClick={goToHome}>Next</button>
+    </>);
 }
 
 export default Thanks;
