@@ -56,17 +56,17 @@
 - [ ] Comments
 - [ ] Semi-colons, commas, etc.
 - [ ] Prettier (indentation)
-- [ ] 
 
 ### PHASE 4 Stretch (optional)
 
-- [ ]
-- [ ]
-- [ ]
-- [ ]
+- [ ] allow a user to go back and change their score
+    - [ ] back button
+- [ ] admin section at /admin
+    - [ ] display all db feedback with most recent submission at top
+    - [ ] can delete existing feedback (prompt user to confirm)
+    - [ ] ability to flag an entry for review
 
 ### PHASE 5 Deployment
 
 - [ ] Heroku
 - [ ] README.md
-- [ ]
