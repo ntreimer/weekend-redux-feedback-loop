@@ -1,8 +1,8 @@
 ### PHASE 1 Skeletons and Organization
 
-- [ ] npm install
-    - [ ] redux
-    - [ ]
+- [x] npm install
+    - [x] redux
+    - [x] router
 - [ ] db in postico
 - [ ] components
     - [ ] Header
