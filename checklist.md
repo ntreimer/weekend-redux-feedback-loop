@@ -38,27 +38,32 @@
         - [ ] support
         - [ ] comments
 - [ ] db 'prime_feedback'
+- [ ] routes
+    - [ ] POST route in Review component
+    - [ ] server side of route(s)
 
 ### PHASE 2 Flesh Out and Styling
 
-- [ ]
-- [ ]
-- [ ]
-- [ ]
+- [ ] next buttons advance survey to next question
+    - [ ] history push
+- [ ] table on review page
+- [ ] reset fields to empty on form submission
+    - [ ] dispatch 'EMPTY_FIELDS' -> empty
+- [ ] style buttons to look better, add cute pictures
 
-### PHASE 3 Stretch
-
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-
-### PHASE 4 Cleanup
+### PHASE 3 Cleanup
 
 - [ ] Comments
 - [ ] Semi-colons, commas, etc.
 - [ ] Prettier (indentation)
 - [ ] 
+
+### PHASE 4 Stretch (optional)
+
+- [ ]
+- [ ]
+- [ ]
+- [ ]
 
 ### PHASE 5 Deployment
 
