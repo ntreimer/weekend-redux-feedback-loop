@@ -14,12 +14,16 @@ function Feelings() {
         })
     }
     const goToUnderstanding = () => {
-        history.push('/understanding');
-    
+        if (feelings !== '') {
+            history.push('/understanding');
+        }
+        else {
+            alert('Please select a rating.')
+        }
     }
     return (<>
         <h2>How are you feeling today?</h2>
-        <select name="feeling-rating" id="feeling-rating" defaultValue={'DEFAULT'} onChange={userFeelings}>
+        <select name="feelings-rating" id="feelings-rating" defaultValue={'DEFAULT'} onChange={userFeelings}>
             <option value="DEFAULT" disabled>Choose a rating</option>
             <option value="1">1</option>
             <option value="2">2</option>

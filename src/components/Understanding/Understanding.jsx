@@ -1,15 +1,31 @@
-import React from 'react';
+import {React, useState} from 'react';
 import {useHistory} from 'react-router-dom';
+import {useDispatch} from 'react-redux';
 
 function Understanding() {
     const history = useHistory();
+    const dispatch = useDispatch();
+
+    const [understanding, setUnderstanding] = useState('');
+    const userUnderstanding = (event) => {
+        setUnderstanding(event.target.value);
+        dispatch({
+            type: 'SET_UNDERSTANDING',
+            payload: event.target.value
+        })
+    }
     const goToSupport = () => {
-        history.push('/support');
+        if (understanding !== '') {
+            history.push('/support');
+        }
+        else {
+            alert('Please select a rating.')
+        }
     }
     return (<>
         <h2>How well are you understanding the content?</h2>
-        <select name="understanding-rating" id="understanding-rating">
-            <option value="" disabled selected>Select a rating</option>
+        <select name="understanding-rating" id="understanding-rating" defaultValue={'DEFAULT'} onChange={userUnderstanding}>
+            <option value="DEFAULT" disabled>Choose a rating</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
