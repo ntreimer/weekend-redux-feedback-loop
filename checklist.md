@@ -6,25 +6,25 @@
 - [ ] db in postico
 - [ ] components
     - [ ] Header
-    - [ ] Home
-    - [ ] Feelings
-        - [ ] input dropdown 1-5
-        - [ ] next
-    - [ ] Understanding
-        - [ ] input dropdown 1-5
-        - [ ] next
-    - [ ] Support
-        - [ ] input dropdown 1-5
-        - [ ] next
+    - [x] Home
+    - [x] Feelings
+        - [x] input dropdown 1-5
+        - [x] next
+    - [x] Understanding
+        - [x] input dropdown 1-5
+        - [x] next
+    - [x] Support
+        - [x] input dropdown 1-5
+        - [x] next
     - [ ] Comments
         - [ ] input VARCHAR 300
-        - [ ] next
+        - [x] next
     - [ ] Review
         - [ ] show previous review info
         - [ ] submit button
     - [ ] Thanks
         - [ ] button to leave new feedback
-- [ ] HashRouter
+- [x] HashRouter
     - [x] /
     - [x] /feelings
     - [x] /understanding
@@ -34,7 +34,7 @@
     - [x] /thanks
 - [ ] Redux/Index
     - [ ] reducers
-        - [ ] feelings
+        - [x] feelings
         - [ ] understanding
         - [ ] support
         - [ ] comments
@@ -45,8 +45,8 @@
 
 ### PHASE 2 Flesh Out and Styling
 
-- [ ] next buttons advance survey to next question
-    - [ ] history push
+- [x] next buttons advance survey to next question
+    - [x] history push
 - [ ] table on review page
 - [ ] reset fields to empty on form submission
     - [ ] dispatch 'EMPTY_FIELDS' -> empty
