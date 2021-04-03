@@ -8,6 +8,7 @@ function Comments() {
     }
     return (<>
         <h2>Any comments you want to leave?</h2>
+        <input type="text"/>
         <button type="button" onClick={goToReview}>Next</button>
     </>);
 }
