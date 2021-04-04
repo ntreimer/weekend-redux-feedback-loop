@@ -8,7 +8,7 @@ function Thanks() {
     }
     return (<>
         <h2>Thank you for your feedback!</h2>
-        <button type="button" onClick={goToHome}>Next</button>
+        <button type="button" onClick={goToHome}>Leave new feedback</button>
     </>);
 }
 

@@ -5,7 +5,7 @@
     - [x] router
 - [ ] db in postico
 - [ ] components
-    - [ ] Header
+    - [x] Header
     - [x] Home
     - [x] Feelings
         - [x] input dropdown 1-5
@@ -19,11 +19,11 @@
     - [ ] Comments
         - [ ] input VARCHAR 300
         - [x] next
-    - [ ] Review
-        - [ ] show previous review info
-        - [ ] submit button
-    - [ ] Thanks
-        - [ ] button to leave new feedback
+    - [x] Review
+        - [x] show previous review info
+        - [x] submit button
+    - [x] Thanks
+        - [x] button to leave new feedback
 - [x] HashRouter
     - [x] /
     - [x] /feelings
@@ -32,13 +32,13 @@
     - [x] /comments
     - [x] /review
     - [x] /thanks
-- [ ] Redux/Index
-    - [ ] reducers
+- [x] Redux/Index
+    - [x] reducers
         - [x] feelings
-        - [ ] understanding
-        - [ ] support
-        - [ ] comments
-- [ ] db 'prime_feedback'
+        - [x] understanding
+        - [x] support
+        - [x] comments
+- [x] db 'prime_feedback'
 - [ ] routes
     - [ ] POST route in Review component
     - [ ] server side of route(s)
