@@ -16,13 +16,11 @@ function Review() {
         console.log(objectToSend);
         axios.post('/feedback', objectToSend).then((response) => {
             console.log(response);
+            history.push('/thanks');
         }).catch((err) => {
             console.log(err);
+            alert('An error occurred while submitting your feedback. Please ensure all fields are complete.');
         })
-    }
-    const goToThanks = () => { 
-        postFeedback();
-        history.push('/thanks');
     }
     const comments = useSelector((store) => {
         return store.comments;
@@ -42,7 +40,7 @@ function Review() {
         <p>Understanding: {understanding}</p>
         <p>Support: {support}</p>
         <p>Comments: {comments}</p>
-        <button type="button" onClick={goToThanks}>Submit</button>
+        <button type="button" onClick={postFeedback}>Submit</button>
     </>);
 }
 
