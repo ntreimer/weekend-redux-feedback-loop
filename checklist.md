@@ -3,8 +3,8 @@
 - [x] npm install
     - [x] redux
     - [x] router
-- [ ] db in postico
-- [ ] components
+- [x] db in postico
+- [x] components
     - [x] Header
     - [x] Home
     - [x] Feelings
@@ -16,8 +16,8 @@
     - [x] Support
         - [x] input dropdown 1-5
         - [x] next
-    - [ ] Comments
-        - [ ] input VARCHAR 300
+    - [x] Comments
+        - [x] input 
         - [x] next
     - [x] Review
         - [x] show previous review info
@@ -39,9 +39,9 @@
         - [x] support
         - [x] comments
 - [x] db 'prime_feedback'
-- [ ] routes
-    - [ ] POST route in Review component
-    - [ ] server side of route(s)
+- [x] routes
+    - [x] POST route in Review component
+    - [x] server side of route(s)
 
 ### PHASE 2 Flesh Out and Styling
 
