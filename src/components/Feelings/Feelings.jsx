@@ -5,15 +5,19 @@ import {useDispatch} from 'react-redux';
 function Feelings() {
     const dispatch = useDispatch();
     const history = useHistory();
+    // use local state to check if dropdown is empty
     const [feelings, setFeelings] = useState('');
     const userFeelings = (event) => {
+        // set local
         setFeelings(event.target.value);
+        // send to store
         dispatch({
             type: 'SET_FEELINGS',
             payload: event.target.value
         })
     }
     const goToUnderstanding = () => {
+        // if empty, require input
         if (feelings !== '') {
             history.push('/understanding');
         }

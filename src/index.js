@@ -9,6 +9,9 @@ import {combineReducers, createStore, applyMiddleware} from 'redux';
 import {Provider} from 'react-redux';
 import logger from 'redux-logger';
 
+// reducers
+// 'SET_SOMETHING' is updating the state to match the state in the component
+// 'CLEAR_ALL' sets all states back to empty strings
 const feelingsRating = (state = '', action) => {
     if (action.type === 'SET_FEELINGS') {
         return state = action.payload;

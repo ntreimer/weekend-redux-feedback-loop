@@ -8,13 +8,16 @@ function Understanding() {
 
     const [understanding, setUnderstanding] = useState('');
     const userUnderstanding = (event) => {
+        // set local
         setUnderstanding(event.target.value);
+        // set global
         dispatch({
             type: 'SET_UNDERSTANDING',
             payload: event.target.value
         })
     }
     const goToSupport = () => {
+        // if not empty, go to support
         if (understanding !== '') {
             history.push('/support');
         }

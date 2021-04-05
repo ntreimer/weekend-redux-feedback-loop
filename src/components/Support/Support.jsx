@@ -5,14 +5,18 @@ import {useHistory} from 'react-router-dom';
 function Support() {
     const history = useHistory();
     const dispatch = useDispatch();
+    // local state to check empty
     const [support, setSupport] = useState('');
     const userSupport = (event) => {
+        // set local
         setSupport(event.target.value);
+        // set global
         dispatch({
             type: 'SET_SUPPORT', 
             payload: event.target.value})
     }
     const goToComments = () => {
+        // if field selected, go to comments
         if (support !== '') {
             history.push('/comments');
         }

@@ -6,22 +6,25 @@ import axios from 'axios';
 function Review() {
     const history = useHistory();
     const postFeedback = () => {
-        console.log('in postfeedback');
+        // collect feedback for POST
         const objectToSend = {
             comments: comments,
             feelings: feelings,
             support: support,
             understanding: understanding
         }
-        console.log(objectToSend);
+        // axios POST request
         axios.post('/feedback', objectToSend).then((response) => {
             console.log(response);
+            // if successful, go to thanks page
             history.push('/thanks');
         }).catch((err) => {
             console.log(err);
+            // show error if POST unsuccessful
             alert('An error occurred while submitting your feedback. Please ensure all fields are complete.');
         })
     }
+    // grab state from redux store
     const comments = useSelector((store) => {
         return store.comments;
     })

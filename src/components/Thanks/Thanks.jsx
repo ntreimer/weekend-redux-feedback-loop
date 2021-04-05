@@ -5,10 +5,12 @@ function Thanks() {
     const history = useHistory();
     const dispatch = useDispatch();
     const clearAllFeedback = () => {
+        // clear all global states
         dispatch({type: 'CLEAR_ALL'});
     }
     const goToHome = () => {
         clearAllFeedback();
+        // go back to home page
         history.push('/');
     }
     return (<>
