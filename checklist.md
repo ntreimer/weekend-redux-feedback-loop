@@ -48,13 +48,13 @@
 - [x] next buttons advance survey to next question
     - [x] history push
 - [ ] table on review page
-- [ ] reset fields to empty on form submission
-    - [ ] dispatch 'EMPTY_FIELDS' -> empty
+- [x] reset fields to empty on form submission
+    - [x] dispatch 'EMPTY_FIELDS' -> empty
 - [ ] style buttons to look better, add cute pictures
 
 ### PHASE 3 Cleanup
 
-- [ ] Comments
+- [x] Comments
 - [ ] Semi-colons, commas, etc.
 - [ ] Prettier (indentation)
 
